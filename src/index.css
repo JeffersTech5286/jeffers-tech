@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@theme {
+    --color-cls-bg: #1e1f22
+}
+
+@layer components {
+    .GradientBase {
+        @apply bg-gradient-to-r from-cyan-400 via-teal-500 to-green-500
+    }
+    .TextGradient {
+        @apply bg-clip-text text-transparent;
+    }
+    .WidthRestrict {
+        @apply max-w-370 mx-auto;
+    }
+    .DefaultPaddingX {
+        @apply px-5;
+    }
+    .TransitionBase {
+        @apply transition-all duration-300 ease-in
+    }
+}
