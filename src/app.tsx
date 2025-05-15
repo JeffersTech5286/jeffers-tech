@@ -24,7 +24,11 @@ function Header({scrolled}: IHeader): ReactNode {
                 <img
                     src='/images/logo-gradient.svg'
                     alt='jefferstech-logo'
-                    className={`TransitionBase ${md ? 'w-60' : 'w-30'} ${md && scrolled ? 'scale-75' : ''}`}
+                    className={`TransitionBase ${
+                        md 
+                            ? scrolled ? 'md:w-40' : 'w-60' 
+                            : 'w-30'
+                    }`}
                 />
             </span>
             <nav></nav>
@@ -54,7 +58,7 @@ export default function App(): ReactNode {
                         <p className='max-w-2xl text-xl md:text-3xl font-extralight'>
                             Desenvolvemos soluções e softwares sob medida para acelerar o crescimento da sua empresa.
                         </p>
-                        <a className='py-4 px-6 rounded-xl font-semibold GradientBase w-max transition-all duration-200 ease-in-out hover:brightness-110 hover:scale-[1.02] active:scale-95'>
+                        <a className='py-4 px-6 rounded-xl font-semibold GradientBase w-max transition-all duration-200 ease-in-out hover:brightness-110 hover:scale-[1.02] active:scale-95 cursor-pointer select-none'>
                             Vamos conversar sobre sua ideia?
                         </a>
                     </div>
