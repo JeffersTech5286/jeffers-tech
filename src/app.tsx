@@ -3,13 +3,15 @@ import {useRef} from 'react'
 import {useScroll} from './core/hooks.ts'
 import Header from './components/Header.tsx'
 import {LinkButton} from './components/Button.tsx'
+import FloatingIcons from './components/Background.tsx'
 
 
 export default function App(): ReactNode {
     const heroRef = useRef<HTMLElement>(null)
     const scrolled = useScroll(heroRef, .99)
 
-    return <div>
+    return <div className="relative min-h-screen">
+        <FloatingIcons/>
         <Header scrolled={scrolled}/>
         <main className='w-full'>
             <section ref={heroRef} className='h-screen relative'>
@@ -30,9 +32,10 @@ export default function App(): ReactNode {
                     </div>
                 </div>
             </section>
-            <section className='bg-cls-bg h-screen'>
-
-            </section>
+            <section className='h-screen'></section>
+            <section className='h-screen'></section>
+            <section className='h-screen'></section>
+            <section className='h-screen'></section>
         </main>
     </div>
 }
