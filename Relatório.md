@@ -46,6 +46,10 @@ Iniciado o projeto da JeffersTech, utilizando as tecnologias React, TailwindCSS 
 * Biblioteca **react-responsive** adicionada para suporte à responsividade;
 * Imagens do projeto realocadas para o diretório `public`.
 
+### 5. 16 de maio de 2025 - 14h35 até 15:35 - pausa - 
 
-
-
+* Header foi movido para componente Header.tsx
+* Criado novas classes CSS, para padronização de layout
+* Criado novo componente de Botão, baseado em `<a/>`
+* Repositório movido para conta da JeffersTech no Github, como organização
+* Dedicação a organização e refatoração do código já escrito
