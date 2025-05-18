@@ -16,7 +16,7 @@ export default function App(): ReactNode {
         <main className='w-full'>
             <section ref={heroRef} className='h-screen relative'>
                 <img
-                    src={`/images/bg-hero-section.jpg`}
+                    src={`/images/bg-hero-section.webp`}
                     alt='background-image'
                     className='object-cover w-screen h-screen'
                 />
