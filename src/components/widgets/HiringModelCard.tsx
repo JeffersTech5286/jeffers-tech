@@ -9,7 +9,7 @@ interface HiringModelCardProps {
 }
 
 export default function HiringModelCard(props: HiringModelCardProps) {
-    return <article className='OutlinedCardBase w-80 text-left'>
+    return <article className='OutlinedCardBase w-full md:w-95 text-left'>
         <h3 className='text-3xl font-semibold mb-4'>{props.title}</h3>
         <h4 className='opacity-45 mb-4'>{props.subtitle}</h4>
         <p className='opacity-80 mb-4'>{props.description}</p>

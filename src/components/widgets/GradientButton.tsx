@@ -7,7 +7,7 @@ interface ILinkButton {
 
 
 export function GradientButton({text, href, className, onClick}: ILinkButton) {
-    const classNames = `Button MediamTransition GradientBase ${className}`
+    const classNames = `Button MediamTransition GradientBase ${className} text-cls-bg`
 
     if (href) {
         return <a className={classNames} href={href}>

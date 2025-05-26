@@ -147,7 +147,7 @@ export default function App(): ReactNode {
                         buttonText='Conhecer Planos'
                         description='Ideal para empresas que já possuem um sistema ou site e desejam manter, melhorar e evoluir continuamente. Contamos com três planos disponíveis, cada um com benefícios exclusivos de acordo com o nível de suporte.'
                         subtitle='Manutenção e evolução contínua com planos mensais'
-                        title='Plano de Suporte Contínuo'
+                        title='Por mensalidade'
                     />
 
                     {/*<HiringModelCard*/}
