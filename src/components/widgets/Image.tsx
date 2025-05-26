@@ -6,16 +6,18 @@ interface ImageProps {
     alt: string
     className?: string
     objectFit?: 'contain' | 'cover'
+    size: string
 }
 
 
-export default function Image({src, alt, className, objectFit='cover'}: ImageProps) {
+export default function Image({src, alt, className, objectFit='cover', size}: ImageProps) {
     return <figure className={`relative overflow-hidden ${className}`}>
         <NextImage
             src={src}
             fill
-            objectFit={objectFit}
             alt={alt}
+            sizes={size}
+            style={{objectFit: objectFit}}
         />
     </figure>
 }

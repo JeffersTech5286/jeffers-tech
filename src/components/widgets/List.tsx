@@ -1,5 +1,5 @@
 import {CircleCheckBig} from 'lucide-react'
-import { ReactNode } from 'react'
+import {ReactNode} from 'react'
 
 interface ListItemIconProps {
     text: string

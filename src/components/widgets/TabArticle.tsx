@@ -40,7 +40,7 @@ export function Tab({title, list, description, thumbnail, isVisile=true}: TabpPr
     return <div className={`
         SlowTransition
         ${isVisile ? 'flex' : 'hidden'}
-        w-full flex-col-reverse gap-5 p-5 border-1 rounded-2xl border-[rgba(255,255,255,.2)]
+        w-full flex-col-reverse gap-5 OutlinedCardBase
         md:flex-row
     `}>
         <article className='flex flex-col gap-5'>
@@ -59,6 +59,7 @@ export function Tab({title, list, description, thumbnail, isVisile=true}: TabpPr
             alt={thumbnail.alt}
             src={thumbnail.src}
             className='max-w-screen w-full lg:flex-none lg:w-[40%] aspect-[16/8] rounded-2xl'
+            size='1080px, 720px'
         />
     </div>
 }
@@ -78,7 +79,7 @@ export function TabLink(props: TabLinkProps) {
 
 export function TabSystem(props: TabSystemProps) {
     const DEFAULT_TIME = 5000
-    const DEFAULT_PERSISTENT = 18000
+    const DEFAULT_PERSISTENT = 15000
     const [activeTab, setActiveTab] = useState(0)
     const [timer, setTimer] = useState(DEFAULT_TIME)
 
