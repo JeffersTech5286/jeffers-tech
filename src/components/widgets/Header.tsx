@@ -25,6 +25,7 @@ export default function Header({ scrolled }: IHeader) {
                             ? 'md:w-40 md:h-8'
                             : 'md:w-60 md:h-11'
                         }`}
+                        size='590px, 120px'
                     />
                 </span>
                 <nav></nav>
