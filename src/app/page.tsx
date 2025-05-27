@@ -12,6 +12,7 @@ import {List, ListItemIcon} from '@/components/widgets/List.tsx'
 import {TabSystem} from '@/components/widgets/TabArticle.tsx'
 import HiringModelCard from '@/components/widgets/HiringModelCard.tsx'
 import AdvantageCard from '@/components/widgets/AdvantageCard.tsx'
+import FAQWidget from '@/components/widgets/FAQWidget'
 
 
 export default function App(): ReactNode {
@@ -31,6 +32,8 @@ export default function App(): ReactNode {
         <Header scrolled={scrolled}/>
 
         <main className='w-full'>
+
+            {/* Hero section */}
             <section ref={heroRef} className='h-screen relative'>
                 {background && (
                     <Image
@@ -59,6 +62,7 @@ export default function App(): ReactNode {
                 </div>
             </section>
 
+            {/* Quem somos */}
             <section className='BaseSection flex flex-col gap-5 lg:flex-row'>
                 <Image
                     src='/images/thumbnails/software-plan.webp'
@@ -86,84 +90,7 @@ export default function App(): ReactNode {
                 </article>
             </section>
 
-            <section className='BaseSection'>
-                <h2 className='BaseTitle text-center mx-auto pb-15'>Por que nos escolher</h2>
-                <div className='flex justify-center flex-wrap gap-10 md:gap-17'>
-                    <AdvantageCard
-                        icon='user-check'
-                        title="Atendimento direto com quem faz"
-                        description="Você fala diretamente com quem desenvolve. Isso garante mais agilidade, clareza e eficiência no seu projeto."
-                    />
-
-                    <AdvantageCard
-                        icon="sliders-horizontal"
-                        title="Soluções sob medida para o seu negócio"
-                        description="Cada cliente é único — e suas soluções também. Criamos sistemas personalizados para resolver os desafios reais do seu negócio."
-                    />
-
-                    <AdvantageCard
-                        icon="handshake"
-                        title="Parceria próxima e transparente"
-                        description="Trabalhamos lado a lado com você, explicando cada etapa e mantendo total transparência em todas as decisões do projeto."
-                    />
-
-                    <AdvantageCard
-                        icon="zap"
-                        title="Agilidade sem perder qualidade"
-                        description="Com uma estrutura leve e eficiente, desenvolvemos rápido sem abrir mão da robustez, escalabilidade e qualidade das entregas."
-                    />
-
-                    <AdvantageCard
-                        icon="heart"
-                        title="Comprometimento de verdade"
-                        description="Seu sucesso é a nossa missão. Cuidamos de cada detalhe para que o resultado final supere as expectativas."
-                    />
-                </div>
-            </section>
-
-            <section className='BaseSection text-center'>
-                <h2 className='BaseTitle w-full mx-auto'>
-                    Veja qual <TextGradient>modelo de contratação</TextGradient> se adapta melhor ao seu negócio
-                </h2>
-                <div className='flex w-full justify-center flex-col gap-10 items-center md:flex-row md:items-start pt-10'>
-                    <HiringModelCard
-                        benefits={[
-                            'Entrega pontual e personalizada',
-                            'Custo fixo, sem surpresas',
-                            'Processo direto e eficiente'
-                        ]}
-                        buttonText='Solicitar Projeto'
-                        description='Perfeito para clientes que desejam resolver uma demanda específica, como a criação de um site institucional, um chatbot, uma landing page ou qualquer outro projeto individual. Sem burocracia e com entrega garantida.'
-                        subtitle='Para quem quer uma solução rápida e sob medida'
-                        title='Projeto Único'
-                    />
-
-                    <HiringModelCard
-                        benefits={[
-                            'Atualizações e melhorias mensais',
-                            'Suporte técnico prioritário',
-                            'Consultoria contínua para inovação'
-                        ]}
-                        buttonText='Conhecer Planos'
-                        description='Ideal para empresas que já possuem um sistema ou site e desejam manter, melhorar e evoluir continuamente. Contamos com três planos disponíveis, cada um com benefícios exclusivos de acordo com o nível de suporte.'
-                        subtitle='Manutenção e evolução contínua com planos mensais'
-                        title='Por mensalidade'
-                    />
-
-                    {/*<HiringModelCard*/}
-                    {/*    benefits={[*/}
-                    {/*        'Desenvolvimento completo sob demanda',*/}
-                    {/*        'Pagamento baseado no sucesso',*/}
-                    {/*        'Contrato claro e alinhado com o crescimento'*/}
-                    {/*    ]}*/}
-                    {/*    buttonText='Propor Parceria'*/}
-                    {/*    description='Uma parceria para empresas que precisam de um time de tecnologia completo, sem pagar adiantado. Cuidamos de |corrigir|<t>odo o desenvolvimento e inovação tecnológica em troca de uma porcentagem dos lucros, com contrato transparente e duradouro.'*/}
-                    {/*    subtitle='Você cuida do negócio, nós da tecnologia'*/}
-                    {/*    title='Parceria Estratégica'*/}
-                    {/*/>*/}
-                </div>
-            </section>
-
+            {/* Explorar soluções */}
             <section className='BaseSection'>
                 <h2 className='BaseTitle'>Explore as <TextGradient>Soluções</TextGradient> da JeffersTech</h2>
                 <p className='BaseParagraph my-5'>
@@ -262,6 +189,123 @@ export default function App(): ReactNode {
                     }
                 ]}/>
             </section>
+
+            {/* Exemplo de projetos */}
+
+            {/* Porque nos escolher */}
+            <section className='BaseSection'>
+                <h2 className='BaseTitle text-center mx-auto pb-15'>Por que nos escolher</h2>
+                <div className='flex justify-center flex-wrap gap-10 md:gap-17'>
+                    <AdvantageCard
+                        icon='user-check'
+                        title="Atendimento direto com quem faz"
+                        description="Você fala diretamente com quem desenvolve. Isso garante mais agilidade, clareza e eficiência no seu projeto."
+                    />
+
+                    <AdvantageCard
+                        icon="sliders-horizontal"
+                        title="Soluções sob medida para o seu negócio"
+                        description="Cada cliente é único — e suas soluções também. Criamos sistemas personalizados para resolver os desafios reais do seu negócio."
+                    />
+
+                    <AdvantageCard
+                        icon="handshake"
+                        title="Parceria próxima e transparente"
+                        description="Trabalhamos lado a lado com você, explicando cada etapa e mantendo total transparência em todas as decisões do projeto."
+                    />
+
+                    <AdvantageCard
+                        icon="zap"
+                        title="Agilidade sem perder qualidade"
+                        description="Com uma estrutura leve e eficiente, desenvolvemos rápido sem abrir mão da robustez, escalabilidade e qualidade das entregas."
+                    />
+
+                    <AdvantageCard
+                        icon="heart"
+                        title="Comprometimento de verdade"
+                        description="Seu sucesso é a nossa missão. Cuidamos de cada detalhe para que o resultado final supere as expectativas."
+                    />
+                </div>
+            </section>
+
+            {/* Depoimentos */}
+
+            {/* Processo */}
+
+            {/* Modelo de contratação */}
+            <section className='BaseSection text-center'>
+                <h2 className='BaseTitle w-full mx-auto'>
+                    Veja qual <TextGradient>modelo de contratação</TextGradient> se adapta melhor ao seu negócio
+                </h2>
+                <div className='flex w-full justify-center flex-col gap-10 items-center md:flex-row md:items-start pt-10'>
+                    <HiringModelCard
+                        benefits={[
+                            'Entrega pontual e personalizada',
+                            'Custo fixo, sem surpresas',
+                            'Processo direto e eficiente'
+                        ]}
+                        buttonText='Solicitar Projeto'
+                        description='Perfeito para clientes que desejam resolver uma demanda específica, como a criação de um site institucional, um chatbot, uma landing page ou qualquer outro projeto individual. Sem burocracia e com entrega garantida.'
+                        subtitle='Para quem quer uma solução rápida e sob medida'
+                        title='Projeto Único'
+                    />
+
+                    <HiringModelCard
+                        benefits={[
+                            'Atualizações e melhorias mensais',
+                            'Suporte técnico prioritário',
+                            'Consultoria contínua para inovação'
+                        ]}
+                        buttonText='Conhecer Planos'
+                        description='Ideal para empresas que já possuem um sistema ou site e desejam manter, melhorar e evoluir continuamente. Contamos com três planos disponíveis, cada um com benefícios exclusivos de acordo com o nível de suporte.'
+                        subtitle='Manutenção e evolução contínua com planos mensais'
+                        title='Por mensalidade'
+                    />
+
+                    {/*<HiringModelCard*/}
+                    {/*    benefits={[*/}
+                    {/*        'Desenvolvimento completo sob demanda',*/}
+                    {/*        'Pagamento baseado no sucesso',*/}
+                    {/*        'Contrato claro e alinhado com o crescimento'*/}
+                    {/*    ]}*/}
+                    {/*    buttonText='Propor Parceria'*/}
+                    {/*    description='Uma parceria para empresas que precisam de um time de tecnologia completo, sem pagar adiantado. Cuidamos de |corrigir|<t>odo o desenvolvimento e inovação tecnológica em troca de uma porcentagem dos lucros, com contrato transparente e duradouro.'*/}
+                    {/*    subtitle='Você cuida do negócio, nós da tecnologia'*/}
+                    {/*    title='Parceria Estratégica'*/}
+                    {/*/>*/}
+                </div>
+            </section>
+
+            {/* Section - FAQ */}
+            <section className='BaseSection'>
+                <h2 className='BaseTitle mb-10'>FAQ - Perguntas frequentes</h2>
+                <FAQWidget
+                    question="Vocês são uma empresa nova. Como posso confiar na qualidade dos seus serviços?"
+                    answer="Entendemos totalmente essa preocupação. Embora a JeffersTech seja uma startup, nossa equipe reúne profissionais experientes e apaixonados por tecnologia. Trabalhamos com total transparência, excelência técnica e dedicação em cada projeto. Nosso compromisso é construir confiança por meio de resultados reais, entregando soluções de alto impacto desde o primeiro cliente."
+                />
+
+                <FAQWidget
+                    question="Qual é o principal foco da JeffersTech?"
+                    answer="Nosso foco é criar soluções digitais sob medida para negócios que querem crescer com tecnologia. Desenvolvemos sistemas web completos, APIs robustas, frontends modernos, bots inteligentes, automações e apps Android. Também otimizamos sites para SEO e performance. Tudo isso com o objetivo de acelerar resultados e tornar a tecnologia uma aliada estratégica dos nossos clientes."
+                />
+
+                <FAQWidget
+                    question="Como funciona o processo de desenvolvimento de um projeto com a JeffersTech?"
+                    answer="Trabalhamos de forma colaborativa e transparente, guiando cada projeto por etapas bem definidas. Começamos entendendo a fundo seu negócio e objetivos, depois planejamos o escopo e as tecnologias ideais para a solução. A partir daí, iniciamos o desenvolvimento de forma ágil, com atualizações constantes. Todo o sistema passa por testes rigorosos de qualidade antes da entrega e implantação. E, se desejar, oferecemos suporte contínuo para garantir a evolução e estabilidade da solução. Nosso objetivo é que você acompanhe cada fase com clareza e confiança."
+                />
+
+                <FAQWidget
+                    question="Como são definidos os custos de um projeto?"
+                    answer="O valor de um projeto é calculado com base no escopo, complexidade das funcionalidades, tecnologias envolvidas e tempo estimado de desenvolvimento. Trabalhamos com propostas claras e personalizadas, sempre buscando o melhor equilíbrio entre investimento e valor entregue. Também oferecemos planos mensais para suporte e evolução contínua, se for o seu caso."
+                />
+
+                <FAQWidget
+                    question="Qual o diferencial da JeffersTech em relação a outras empresas de desenvolvimento?"
+                    answer="Nosso maior diferencial é a proximidade. Você fala diretamente com quem desenvolve. Isso nos permite criar soluções realmente personalizadas, com agilidade e foco total em resolver os problemas do seu negócio. Mais do que entregar código, queremos ser parceiros do seu crescimento — com soluções inteligentes, atendimento humano e resultados concretos."
+                />
+            </section>
+
+            {/* Ação Final */}
 
         </main>
     </>
