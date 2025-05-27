@@ -13,6 +13,7 @@ import {TabSystem} from '@/components/widgets/TabArticle.tsx'
 import HiringModelCard from '@/components/widgets/HiringModelCard.tsx'
 import AdvantageCard from '@/components/widgets/AdvantageCard.tsx'
 import FAQWidget from '@/components/widgets/FAQWidget'
+import FloatingIcons from '@/components/widgets/Background'
 
 
 export default function App(): ReactNode {
@@ -26,8 +27,8 @@ export default function App(): ReactNode {
         setBackground(true)
     }, []);
 
-    return <>
-        {/*{background && (<FloatingIcons/>)}*/}
+    return <div className='relative'>
+        {background && (<FloatingIcons/>)}
 
         <Header scrolled={scrolled}/>
 
@@ -86,7 +87,7 @@ export default function App(): ReactNode {
                         <ListItemIcon text='Apps Android nativos publicados na PlayStore'/>
                         <ListItemIcon text='Atendimento próximo e centrado na solução'/>
                     </List>
-                    <GradientButton className='' text='Saiba mais sobre nós'/>
+                    <GradientButton className='w-max' text='Saiba mais sobre nós'/>
                 </article>
             </section>
 
@@ -248,6 +249,7 @@ export default function App(): ReactNode {
                         description='Perfeito para clientes que desejam resolver uma demanda específica, como a criação de um site institucional, um chatbot, uma landing page ou qualquer outro projeto individual. Sem burocracia e com entrega garantida.'
                         subtitle='Para quem quer uma solução rápida e sob medida'
                         title='Projeto Único'
+                        buttonTargetURL='#' // todo: colocar link para contratação de projeto único
                     />
 
                     <HiringModelCard
@@ -260,6 +262,7 @@ export default function App(): ReactNode {
                         description='Ideal para empresas que já possuem um sistema ou site e desejam manter, melhorar e evoluir continuamente. Contamos com três planos disponíveis, cada um com benefícios exclusivos de acordo com o nível de suporte.'
                         subtitle='Manutenção e evolução contínua com planos mensais'
                         title='Por mensalidade'
+                        buttonTargetURL='/planos'
                     />
 
                     {/*<HiringModelCard*/}
@@ -308,5 +311,5 @@ export default function App(): ReactNode {
             {/* Ação Final */}
 
         </main>
-    </>
+    </div>
 }

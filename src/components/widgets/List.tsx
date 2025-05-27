@@ -3,10 +3,11 @@ import {ReactNode} from 'react'
 
 interface ListItemIconProps {
     text: string
+    className?: string
 }
 
 export function ListItemIcon(props: ListItemIconProps) {
-    return <li className='text-sm'>
+    return <li className={props.className ? props.className : 'text-sm'}>
         <CircleCheckBig className='text-green-300 inline mr-2' size={15}/>
         {props.text}
     </li>

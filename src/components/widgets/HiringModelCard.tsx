@@ -6,10 +6,11 @@ interface HiringModelCardProps {
     description: string
     benefits: string[]
     buttonText: string
+    buttonTargetURL: string
 }
 
 export default function HiringModelCard(props: HiringModelCardProps) {
-    return <article className='OutlinedCardBase w-full md:w-95 text-left'>
+    return <article className='OutlinedCardBase w-full md:w-95 text-left backdrop-blur-sm'>
         <h3 className='text-3xl font-semibold mb-4'>{props.title}</h3>
         <h4 className='opacity-45 mb-4'>{props.subtitle}</h4>
         <p className='opacity-80 mb-4'>{props.description}</p>
@@ -20,6 +21,10 @@ export default function HiringModelCard(props: HiringModelCardProps) {
                 </div>
             })}
         </div>
-        <GradientButton text={props.buttonText} className='w-full md:w-auto mt-6'/>
+        <GradientButton
+            href={props.buttonTargetURL}
+            text={props.buttonText}
+            className='w-full md:w-auto mt-6'
+        />
     </article>
 }

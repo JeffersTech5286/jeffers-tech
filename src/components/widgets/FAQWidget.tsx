@@ -11,7 +11,7 @@ export default function FAQWidget(props: { question: string, answer: string }) {
     }
 
     return (
-        <div className='border-b OutlinedCardBase py-4 my-5'>
+        <div className='border-b OutlinedCardBase py-4 my-5 backdrop-blur-sm'>
             <div
                 className={`flex justify-between items-center cursor-pointer border-[rgba(255,255,255,.2)] ${expanded && 'border-b-1 pb-4'}`}
                 onClick={toggleExpanded}

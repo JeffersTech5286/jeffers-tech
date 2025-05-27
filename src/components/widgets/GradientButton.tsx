@@ -7,14 +7,22 @@ interface ILinkButton {
 
 
 export function GradientButton({text, href, className, onClick}: ILinkButton) {
-    const classNames = `Button MediamTransition GradientBase ${className} text-cls-bg`
+    const classNames = `
+        py-3 px-8 rounded-xl font-semibold cursor-pointer select-none text-cls-bg
+        hover:brightness-110 hover:scale-[1.02]
+        active:scale-95
+        MediamTransition GradientBase ${className}
+    `
+
+    function handleClick() {if (onClick) onClick()}
 
     if (href) {
-        return <a className={classNames} href={href}>
+        return <a className={`block text-center ${classNames}`} href={href}>
             {text}
         </a>
     }
-    return <button className={classNames} onClick={function() {if (onClick) onClick()}}>
+
+    return <button className={classNames} onClick={handleClick}>
         {text}
     </button>
 }

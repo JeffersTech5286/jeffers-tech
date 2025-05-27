@@ -40,7 +40,7 @@ export function Tab({title, list, description, thumbnail, isVisile=true}: TabpPr
     return <div className={`
         SlowTransition
         ${isVisile ? 'flex' : 'hidden'}
-        w-full flex-col-reverse gap-5 OutlinedCardBase
+        w-full flex-col-reverse gap-5 OutlinedCardBase backdrop-blur-sm
         md:flex-row
     `}>
         <article className='flex flex-col gap-5'>
@@ -102,7 +102,7 @@ export function TabSystem(props: TabSystemProps) {
 
     return (
         <div>
-            <div className='w-full rounded-lg overflow-hidden mb-5 bg-[rgb(255,255,255,.15)]'>
+            <div className='w-full rounded-lg overflow-hidden mb-5 bg-[rgb(150,150,170,.15)] backdrop-blur-xs'>
                 <div className='
                 w-full p-1 grid grid-cols-3 grid-rows-2
                 md:grid-cols-6 md:grid-rows-1'
