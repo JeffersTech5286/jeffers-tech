@@ -1,0 +1,85 @@
+import React from 'react';
+import {
+    UserCheck,
+    SlidersHorizontal,
+    Handshake,
+    Zap,
+    Heart,
+} from 'lucide-react';
+
+const advantages = [
+    {
+        title: 'Atendimento direto com quem faz',
+        description:
+            'Você fala diretamente com quem desenvolve. Isso garante mais agilidade, clareza e eficiência no seu projeto.',
+        icon: UserCheck,
+        color: 'text-blue-500',
+    },
+    {
+        title: 'Soluções sob medida para o seu negócio',
+        description:
+            'Cada cliente é único — e suas soluções também. Criamos sistemas personalizados para resolver os desafios reais do seu negócio.',
+        icon: SlidersHorizontal,
+        color: 'text-green-500',
+    },
+    {
+        title: 'Parceria próxima e transparente',
+        description:
+            'Trabalhamos lado a lado com você, explicando cada etapa e mantendo total transparência em todas as decisões do projeto.',
+        icon: Handshake,
+        color: 'text-yellow-400',
+    },
+    {
+        title: 'Agilidade sem perder qualidade',
+        description:
+            'Com uma estrutura leve e eficiente, desenvolvemos rápido sem abrir mão da robustez, escalabilidade e qualidade das entregas.',
+        icon: Zap,
+        color: 'text-purple-500',
+    },
+    {
+        title: 'Comprometimento de verdade',
+        description:
+            'Seu sucesso é a nossa missão. Cuidamos de cada detalhe para que o resultado final supere as expectativas.',
+        icon: Heart,
+        color: 'text-pink-500',
+    },
+];
+
+const AdvantagesSection = () => {
+    return (
+        <section id="vantagens" className="py-16 bg-gray-800">
+            <div className="container mx-auto px-4">
+                <div className="max-w-6xl mx-auto">
+                    <div className="text-center mb-12">
+                        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-100">
+                            Por que nos escolher?
+                        </h2>
+                        <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mb-6"></div>
+                        <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+                            Diferenciais que fazem da JeffersTech a escolha ideal para seu projeto
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {advantages.map(({ title, description, icon: Icon, color }, index) => (
+                            <div
+                                key={index}
+                                className="group p-6 bg-gradient-to-br from-gray-700 to-gray-800 rounded-xl hover:shadow-lg transition-transform duration-300 transform hover:-translate-y-1 border border-gray-600"
+                            >
+                                <div
+                                    className={`text-6xl mb-4 group-hover:scale-110 transition-transform duration-300 ${color}`}
+                                >
+                                    <Icon strokeWidth={1.7} />
+                                </div>
+                                <h3 className="text-lg font-semibold mb-2 text-gray-100">{title}</h3>
+                                <p className="text-gray-300 leading-snug text-sm">{description}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default AdvantagesSection;
