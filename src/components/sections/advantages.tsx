@@ -11,39 +11,39 @@ const advantages = [
     {
         title: 'Atendimento direto com quem faz',
         description:
-            'Você fala diretamente com quem desenvolve. Isso garante mais agilidade, clareza e eficiência no seu projeto.',
+            'Você conversa direto com o desenvolvedor, garantindo agilidade, clareza e mais eficiência no seu projeto.',
         icon: UserCheck,
         color: 'text-blue-500',
     },
     {
-        title: 'Soluções sob medida para o seu negócio',
+        title: 'Soluções sob medida',
         description:
-            'Cada cliente é único — e suas soluções também. Criamos sistemas personalizados para resolver os desafios reais do seu negócio.',
+            'Cada negócio é único, por isso entregamos sistemas personalizados que realmente resolvem seus desafios.',
         icon: SlidersHorizontal,
         color: 'text-green-500',
     },
     {
         title: 'Parceria próxima e transparente',
         description:
-            'Trabalhamos lado a lado com você, explicando cada etapa e mantendo total transparência em todas as decisões do projeto.',
+            'Trabalhamos lado a lado com você, explicando cada passo e mantendo total transparência durante o projeto.',
         icon: Handshake,
         color: 'text-yellow-400',
     },
     {
-        title: 'Agilidade sem perder qualidade',
+        title: 'Agilidade com qualidade',
         description:
-            'Com uma estrutura leve e eficiente, desenvolvemos rápido sem abrir mão da robustez, escalabilidade e qualidade das entregas.',
+            'Desenvolvemos rápido, mas sem abrir mão da robustez, escalabilidade e qualidade das entregas.',
         icon: Zap,
         color: 'text-purple-500',
     },
     {
-        title: 'Comprometimento de verdade',
+        title: 'Comprometimento real',
         description:
-            'Seu sucesso é a nossa missão. Cuidamos de cada detalhe para que o resultado final supere as expectativas.',
+            'Seu sucesso é nossa prioridade. Cuidamos de cada detalhe para superar suas expectativas.',
         icon: Heart,
         color: 'text-pink-500',
     },
-];
+]
 
 const AdvantagesSection = () => {
     return (
@@ -56,7 +56,7 @@ const AdvantagesSection = () => {
                         </h2>
                         <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mb-6"></div>
                         <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-                            Diferenciais que fazem da JeffersTech a escolha ideal para seu projeto
+                            Diferenciais que fazem da JeffersTech a melhor opção para o seu projeto
                         </p>
                     </div>
 

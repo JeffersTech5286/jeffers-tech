@@ -7,29 +7,40 @@ const faqs = [
     {
         question: "Vocês são uma empresa nova. Como posso confiar na qualidade dos seus serviços?",
         answer:
-            "Entendemos totalmente essa preocupação. Embora a JeffersTech seja uma startup, nossa equipe reúne profissionais experientes e apaixonados por tecnologia. Trabalhamos com total transparência, excelência técnica e dedicação em cada projeto. Nosso compromisso é construir confiança por meio de resultados reais, entregando soluções de alto impacto desde o primeiro cliente.",
+            "Entendemos totalmente essa preocupação. Embora a JeffersTech seja uma startup, nossa equipe une experiência, estudo contínuo e muita dedicação. Trabalhamos com transparência, excelência técnica e foco total em entregar resultados reais. Nosso objetivo é conquistar sua confiança desde o primeiro projeto.",
     },
     {
         question: "Qual é o principal foco da JeffersTech?",
         answer:
-            "Nosso foco é criar soluções digitais sob medida para negócios que querem crescer com tecnologia. Desenvolvemos sistemas web completos, APIs robustas, frontends modernos, bots inteligentes, automações e apps Android. Também otimizamos sites para SEO e performance. Tudo isso com o objetivo de acelerar resultados e tornar a tecnologia uma aliada estratégica dos nossos clientes.",
+            "Nosso foco é criar soluções digitais sob medida para negócios que querem crescer com tecnologia. Desenvolvemos sistemas web, APIs, frontends modernos, bots inteligentes, automações e apps Android. Também otimizamos sites para SEO e performance. Nosso objetivo é tornar a tecnologia uma aliada estratégica para o seu negócio.",
     },
     {
         question: "Como funciona o processo de desenvolvimento de um projeto com a JeffersTech?",
         answer:
-            "Trabalhamos de forma colaborativa e transparente, guiando cada projeto por etapas bem definidas. Começamos entendendo a fundo seu negócio e objetivos, depois planejamos o escopo e as tecnologias ideais para a solução. A partir daí, iniciamos o desenvolvimento de forma ágil, com atualizações constantes. Todo o sistema passa por testes rigorosos de qualidade antes da entrega e implantação. E, se desejar, oferecemos suporte contínuo para garantir a evolução e estabilidade da solução. Nosso objetivo é que você acompanhe cada fase com clareza e confiança.",
+            "Começamos entendendo seu negócio e os objetivos do projeto. A partir disso, definimos o escopo e as tecnologias ideais. O desenvolvimento é feito de forma ágil e transparente, com atualizações frequentes. Testamos tudo com cuidado antes da entrega e, se quiser, oferecemos suporte gratuito por um período após o projeto. Você acompanha tudo de perto, com clareza e confiança.",
     },
     {
         question: "Como são definidos os custos de um projeto?",
         answer:
-            "O valor de um projeto é calculado com base no escopo, complexidade das funcionalidades, tecnologias envolvidas e tempo estimado de desenvolvimento. Trabalhamos com propostas claras e personalizadas, sempre buscando o melhor equilíbrio entre investimento e valor entregue. Também oferecemos planos mensais para suporte e evolução contínua, se for o seu caso.",
+            "O valor depende do escopo, da complexidade, do tempo necessário e das tecnologias envolvidas. Apresentamos uma proposta clara e personalizada, sem surpresas. O modelo de projeto único tem custo fixo, e futuramente também ofereceremos planos mensais de suporte contínuo.",
     },
     {
         question: "Qual o diferencial da JeffersTech em relação a outras empresas de desenvolvimento?",
         answer:
-            "Nosso maior diferencial é a proximidade. Você fala diretamente com quem desenvolve. Isso nos permite criar soluções realmente personalizadas, com agilidade e foco total em resolver os problemas do seu negócio. Mais do que entregar código, queremos ser parceiros do seu crescimento — com soluções inteligentes, atendimento humano e resultados concretos.",
+            "Nosso diferencial está na proximidade e personalização. Você fala diretamente com quem desenvolve, o que garante mais agilidade e foco nos detalhes. Valorizamos a comunicação clara, a transparência e a entrega de soluções que realmente resolvem problemas do seu negócio.",
     },
-]
+    {
+        question: "Quais tecnologias vocês usam nos projetos?",
+        answer:
+            "Utilizamos tecnologias modernas como React, Next.js, Django, FastAPI, MongoDB, PostgreSQL, e hospedagens como Vercel e HostGator. Para mobile, usamos React Native. Sempre escolhemos as ferramentas mais adequadas para o seu projeto, com foco em performance, segurança e escalabilidade.",
+    },
+    {
+        question: "Como é feito o suporte após a entrega?",
+        answer:
+            "Oferecemos suporte gratuito por um período de 1 a 3 meses após a entrega, garantindo estabilidade e ajustes caso necessário. Após isso, podemos oferecer planos de manutenção e evolução contínua, conforme a necessidade do cliente.",
+    }
+];
+
 
 export default function Faq() {
     const [activeIndex, setActiveIndex] = useState<number | null>(null)

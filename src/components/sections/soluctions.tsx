@@ -22,87 +22,81 @@ export default function Solutions() {
         {
             title: 'Sistemas Web',
             icon: Globe,
-            description: 'Desenvolvimento de aplicações web robustas e escaláveis',
+            description: 'Desenvolvemos sistemas web personalizados, robustos e fáceis de usar, para melhorar o controle e a gestão do seu negócio.',
             benefits: [
                 'Interface moderna e intuitiva',
-                'Arquitetura escalável',
-                'Segurança avançada',
-                'Integração com APIs',
-                'Dashboard administrativo',
-                'Relatórios em tempo real'
+                'Arquitetura escalável e segura',
+                'Integração com APIs e sistemas externos',
+                'Painel administrativo prático',
+                'Relatórios em tempo real para decisões rápidas'
             ],
             image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6'
-       },
+        },
         {
             title: 'Bots Inteligentes',
             icon: Cpu,
-            description: 'Automação de processos com inteligência artificial',
+            description: 'Automatizamos atendimentos e processos com bots para WhatsApp, Telegram, Instagram e Discord, usando inteligência artificial para melhorar a experiência do cliente.',
             benefits: [
-                'Atendimento 24/7',
-                'Redução de custos',
-                'Integração WhatsApp/Telegram',
-                'IA conversacional',
-                'Analytics detalhados',
-                'Personalização completa'
+                'Atendimento 24/7 sem pausas',
+                'Redução de custos operacionais',
+                'Integração com principais plataformas de mensagem',
+                'Respostas automatizadas e personalizadas',
+                'Relatórios e análise de dados de atendimento'
             ],
             image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7'
-       },
+        },
         {
             title: 'Apps Mobile',
             icon: Smartphone,
-            description: 'Aplicativos nativos para iOS e Android',
+            description: 'Criamos aplicativos móveis para Android (e iOS, conforme demanda), com foco em performance, usabilidade e integração com seus sistemas.',
             benefits: [
-                'Design responsivo',
-                'Performance otimizada',
-                'Offline first',
-                'Push notifications',
-                'Sincronização em nuvem',
-                'Analytics integrado'
+                'Design responsivo e amigável',
+                'Alta performance e estabilidade',
+                'Funcionalidades offline quando necessárias',
+                'Notificações push para engajamento',
+                'Sincronização segura com a nuvem'
             ],
             image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c'
-       },
+        },
         {
             title: 'Integrações',
             icon: Puzzle,
-            description: 'Conectamos seus sistemas e automatizamos workflows',
+            description: 'Conectamos seus sistemas e automatizamos processos, integrando CRMs, ERPs, APIs e plataformas de ecommerce para facilitar sua operação.',
             benefits: [
-                'APIs RESTful',
-                'Webhooks em tempo real',
-                'Sincronização de dados',
-                'ERP/CRM integration',
-                'Pagamentos online',
-                'Monitoramento ativo'
+                'APIs RESTful e Webhooks em tempo real',
+                'Sincronização automática de dados',
+                'Integração com CRM (como Brevo)',
+                'Automação de workflows e processos',
+                'Pagamentos online e monitoramento ativo'
             ],
             image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31'
-       },
+        },
         {
-            title: 'SEO & Marketing',
+            title: 'SEO & Marketing Digital',
             icon: Megaphone,
-            description: 'Otimização para mecanismos de busca e marketing digital',
+            description: 'Melhoramos a visibilidade da sua empresa online com otimização SEO e estratégias de marketing digital alinhadas ao seu negócio.',
             benefits: [
-                'Auditoria técnica completa',
-                'Otimização on-page',
-                'Link building estratégico',
-                'Analytics e relatórios',
-                'Campanhas Google Ads',
-                'Social media management'
+                'Análise e auditoria técnica completa',
+                'Otimização on-page para motores de busca',
+                'Link building e autoridade digital',
+                'Monitoramento e relatórios detalhados',
+                'Campanhas de Google Ads e redes sociais'
             ],
             image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f'
-       },
+        },
         {
-            title: 'Infraestrutura',
+            title: 'Infraestrutura e Cloud',
             icon: Server,
-            description: 'Cloud computing e DevOps para máxima performance',
+            description: 'Gerenciamos a infraestrutura na nuvem para garantir alta performance, segurança e disponibilidade dos seus sistemas e apps.',
             benefits: [
-                'AWS/Azure/GCP',
-                'Auto-scaling',
-                'Backup automatizado',
-                'Monitoramento 24/7',
-                'CI/CD pipelines',
-                'Segurança avançada'
+                'Hospedagem em provedores confiáveis',
+                'Escalabilidade automática conforme demanda',
+                'Backups automatizados e segurança avançada',
+                'Monitoramento 24/7 e suporte técnico',
+                'Processos automatizados de deploy (CI/CD)'
             ],
             image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158'
-       }
+        }
     ]
 
     useEffect(() => {

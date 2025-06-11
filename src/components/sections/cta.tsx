@@ -17,17 +17,17 @@ export default function CTA() {
             <div className="container mx-auto px-4 relative z-10">
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white">
-                        Pronto para transformar
-                        <span className="block">sua ideia em realidade?</span>
+                        Pronto para <span className='gradient-text'>tirar sua ideia do papel</span> e transformar em realidade?
                     </h2>
 
+
                     <p className="text-xl md:text-2xl text-cyan-100 mb-12 max-w-3xl mx-auto leading-relaxed">
-                        Solicite um orçamento gratuito e descubra como podemos impulsionar seu negócio com tecnologia de ponta.
+                        Solicite um orçamento gratuito e veja como podemos acelerar o crescimento do seu negócio com soluções digitais sob medida, sem complicação.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                         <Button onClick={openWhatsApp}>
-                            Orçamento Gratuito via Whatsapp
+                            Solicitar Orçamento via WhatsApp
                         </Button>
 
                         <div className="text-white text-center">
@@ -36,18 +36,18 @@ export default function CTA() {
                         </div>
                     </div>
 
-                    <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-cente font-extrabold">
+                    <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center font-extrabold">
                         <div className="text-white">
                             <CheckCircle className="mx-auto" size={48} />
-                            <div className="mt-2 font-medium">Orçamento sem compromisso</div>
+                            <div className="mt-2 font-medium">Sem compromisso, 100% gratuito</div>
                         </div>
                         <div className="text-white">
                             <Rocket className="mx-auto" size={48} />
-                            <div className="mt-2 font-medium">Início rápido do projeto</div>
+                            <div className="mt-2 font-medium">Início rápido, sem burocracia</div>
                         </div>
                         <div className="text-white">
                             <Award className="mx-auto" size={48} />
-                            <div className="mt-2 font-medium">Qualidade garantida</div>
+                            <div className="mt-2 font-medium">Foco total na qualidade e no resultado</div>
                         </div>
                     </div>
                 </div>

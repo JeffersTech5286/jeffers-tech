@@ -6,13 +6,13 @@ import { CheckIcon } from 'lucide-react';
 
 const About = () => {
     const differentials = [
-        'Metodologia ágil e transparente',
-        'Equipe especializada e dedicada',
-        'Tecnologias modernas e escaláveis',
-        'Suporte técnico especializado',
-        'Entrega dentro do prazo acordado',
-        'Comunicação clara e constante',
-    ];
+        'Metas claras e foco constante',
+        'Dedicados na sua solução',
+        'Tecnologias modernas e seguras',
+        'Suporte gratuito no pós-entrega',
+        'Compromisso com prazos reais',
+        'Transparência total no projeto'
+    ]
 
     return (
         <section id="quem-somos" className="py-20 bg-gray-800">

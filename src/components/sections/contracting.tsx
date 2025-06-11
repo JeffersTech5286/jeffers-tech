@@ -101,13 +101,17 @@ export default function Contracting() {
         {
             title: 'Projeto Único',
             description:
-                'Perfeito para clientes que desejam resolver uma demanda específica, como a criação de um site institucional, um chatbot, uma landing page ou qualquer outro projeto individual. Sem burocracia e com entrega garantida.',
+                'Ideal para quem precisa de uma solução específica — seja um site institucional, chatbot, landing page ou outro projeto isolado. Sem complicação, com entrega garantida e transparente.',
             price: 'Sob consulta',
-            benefits: ['Entrega pontual e personalizada', 'Custo fixo, sem surpresas', 'Processo direto e eficiente'],
+            benefits: [
+                'Entrega personalizada e no prazo',
+                'Custo fixo, sem surpresas',
+                'Processo simples e direto',
+            ],
             recommended: false,
             buttonText: 'Solicitar Projeto',
-            highlight: 'Solução Rápida',
-        },
+            highlight: 'Solução rápida',
+        }
         // {
         //     title: 'Por mensalidade',
         //     description:
