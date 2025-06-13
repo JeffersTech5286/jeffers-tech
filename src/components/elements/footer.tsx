@@ -1,7 +1,8 @@
 'use client'
 
 import Link from "next/link"
-import {Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter} from "lucide-react"
+import {Facebook, Instagram, Linkedin, Mail, Phone, Twitter, Github} from "lucide-react"
+import siteconfig from '@/siteconfig'
 
 export default function Footer() {
     const currentYear = new Date().getFullYear()
@@ -23,17 +24,20 @@ export default function Footer() {
                             Soluções tecnológicas inovadoras para impulsionar o crescimento do seu negócio.
                         </p>
                         <div className="flex space-x-4">
-                            <Link href="#" aria-label="Facebook" className="hover:text-cls-gradient-via transition-colors">
+                            <Link href={siteconfig.social.facebook} aria-label="Facebook" className="hover:text-cls-gradient-via transition-colors" target="_blank" rel="noopener noreferrer">
                                 <Facebook size={18} />
                             </Link>
-                            <Link href="#" aria-label="Instagram" className="hover:text-cls-gradient-via transition-colors">
+                            <Link href={siteconfig.social.instagram} aria-label="Instagram" className="hover:text-cls-gradient-via transition-colors" target="_blank" rel="noopener noreferrer">
                                 <Instagram size={18} />
                             </Link>
-                            <Link href="#" aria-label="Twitter" className="hover:text-cls-gradient-via transition-colors">
+                            <Link href={siteconfig.social.twitter} aria-label="Twitter" className="hover:text-cls-gradient-via transition-colors" target="_blank" rel="noopener noreferrer">
                                 <Twitter size={18} />
                             </Link>
-                            <Link href="#" aria-label="LinkedIn" className="hover:text-cls-gradient-via transition-colors">
+                            <Link href={siteconfig.social.linkedin} aria-label="LinkedIn" className="hover:text-cls-gradient-via transition-colors" target="_blank" rel="noopener noreferrer">
                                 <Linkedin size={18} />
+                            </Link>
+                            <Link href={siteconfig.social.github} aria-label="LinkedIn" className="hover:text-cls-gradient-via transition-colors" target="_blank" rel="noopener noreferrer">
+                                <Github size={18} />
                             </Link>
                         </div>
                     </div>
@@ -97,17 +101,17 @@ export default function Footer() {
                     <div>
                         <h3 className="text-md md:text-lg font-semibold text-white mb-3 md:mb-4">Contato</h3>
                         <ul className="space-y-2 md:space-y-3 text-sm md:text-base">
-                            <li className="flex items-start">
-                                <MapPin size={16} className="mr-2 mt-1 flex-shrink-0" />
-                                <span>Av. Paulista, 1000, São Paulo - SP</span>
-                            </li>
+                            {/*<li className="flex items-start">*/}
+                            {/*    <MapPin size={16} className="mr-2 mt-1 flex-shrink-0" />*/}
+                            {/*    <span>Av. Paulista, 1000, São Paulo - SP</span>*/}
+                            {/*</li>*/}
                             <li className="flex items-center">
                                 <Phone size={16} className="mr-2 flex-shrink-0" />
-                                <span>(11) 99999-9999</span>
+                                <span>{siteconfig.contact.phoneFormated}</span>
                             </li>
                             <li className="flex items-center">
                                 <Mail size={16} className="mr-2 flex-shrink-0" />
-                                <span>contato@jefferstech.com.br</span>
+                                <span>{siteconfig.contact.email}</span>
                             </li>
                         </ul>
                     </div>

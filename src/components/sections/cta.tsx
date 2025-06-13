@@ -2,12 +2,13 @@
 
 import React from 'react';
 import {Button} from '@/components/ui/button'
-import {Award, CheckCircle, Rocket} from 'lucide-react';
+import {Award, CheckCircle, Rocket} from 'lucide-react'
+import siteconfig from '@/siteconfig'
 
 export default function CTA() {
     const openWhatsApp = () => {
         const message = 'Olá! Vi o site da JeffersTech e gostaria de solicitar um orçamento gratuito para meu projeto.';
-        window.open(`https://wa.me/5511999999999?text=${encodeURIComponent(message)}`, '_blank');
+        window.open(`https://wa.me/${siteconfig.contact.phone}?text=${encodeURIComponent(message)}`, '_blank');
     };
 
     return (

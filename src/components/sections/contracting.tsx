@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver'
+import siteconfig from '@/siteconfig'
 
 
 interface Model {
@@ -88,7 +89,7 @@ function ContractingCard({ model, index, onButtonClick }: ContractingCardProps) 
                         ? 'bg-white text-[var(--cls-gradient-via)] hover:bg-cyan-50'
                         : 'gradient-primary text-white hover:shadow-xl'
                 } ${isVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-4 scale-95'}`}
-                style={{ transitionDelay: `${index * 200 + 600}ms` }}
+                style={{transitionDelay: `${index * 200 + 600}ms`}}
             >
                 {model.buttonText}
             </button>
@@ -144,7 +145,7 @@ export default function Contracting() {
 
     const openWhatsApp = (modelTitle: string) => {
         const message = `Olá! Gostaria de saber mais sobre o modelo de contratação: ${modelTitle}`;
-        window.open(`https://wa.me/5511999999999?text=${encodeURIComponent(message)}`, '_blank');
+        window.open(`https://wa.me/${siteconfig.contact.phone}?text=${encodeURIComponent(message)}`, '_blank');
     };
 
     const { elementRef: headerRef, isVisible: headerVisible } = useIntersectionObserver({
