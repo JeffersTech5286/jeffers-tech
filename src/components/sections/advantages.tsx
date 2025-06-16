@@ -47,7 +47,7 @@ const advantages = [
 
 const AdvantagesSection = () => {
     return (
-        <section id="vantagens" className="py-16 bg-gray-800">
+        <section id="vantagens" className="py-16 bg-gray-pattern-plus-soft">
             <div className="container mx-auto px-4">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-12">

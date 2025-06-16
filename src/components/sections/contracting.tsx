@@ -157,7 +157,7 @@ export default function Contracting() {
     // const cardsObservers = contractingModels.map(() => ...); // <- LINHA REMOVIDA
 
     return (
-        <section id="contratação" className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+        <section id="contratação" className="py-20 section-dark-aggressive">
             <div className="container mx-auto px-4">
                 <div className="max-w-6xl mx-auto">
                     <div
