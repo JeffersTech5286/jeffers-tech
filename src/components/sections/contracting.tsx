@@ -157,7 +157,7 @@ export default function Contracting() {
     return (
         <section id="contratação" className="py-20 bg-gray-900">
             <div className="container mx-auto px-4">
-                <div className="max-w-6xl mx-auto text-center">
+                <div className="max-w-6xl mx-auto">
                     <div
                         ref={headerRef}
                         className={`text-center mb-16 transition-all duration-700 ${
@@ -171,7 +171,7 @@ export default function Contracting() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 text-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         {/* Mapeie os modelos para o novo componente ContractingCard */}
                         {contractingModels.map((model, index) => (
                             <ContractingCard
