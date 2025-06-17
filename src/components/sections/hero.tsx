@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import {ArrowDown} from 'lucide-react'
+import ArrowDown from 'lucide-react/dist/esm/icons/arrow-down'
 import {Button} from '@/components/ui/button'
 
 

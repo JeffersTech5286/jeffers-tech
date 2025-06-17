@@ -1,11 +1,8 @@
-import React from 'react';
-import {
-    UserCheck,
-    SlidersHorizontal,
-    Handshake,
-    Zap,
-    Heart,
-} from 'lucide-react';
+import UserCheck from 'lucide-react/dist/esm/icons/user-check'
+import SlidersHorizontal from 'lucide-react/dist/esm/icons/sliders-horizontal'
+import Handshake from 'lucide-react/dist/esm/icons/handshake'
+import Zap from 'lucide-react/dist/esm/icons/zap'
+import Heart from 'lucide-react/dist/esm/icons/heart'
 
 const advantages = [
     {

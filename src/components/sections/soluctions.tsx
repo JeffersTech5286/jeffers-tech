@@ -2,14 +2,13 @@
 
 import React, {useState, useEffect} from 'react'
 import Image from 'next/image'
-import {
-    Globe,
-    Cpu,
-    Smartphone,
-    Puzzle,
-    Megaphone,
-    Server,
-} from 'lucide-react'
+
+import Globe from 'lucide-react/dist/esm/icons/globe'
+import Cpu from 'lucide-react/dist/esm/icons/cpu'
+import Smartphone from 'lucide-react/dist/esm/icons/smartphone'
+import Puzzle from 'lucide-react/dist/esm/icons/puzzle'
+import Megaphone from 'lucide-react/dist/esm/icons/megaphone'
+import Server from 'lucide-react/dist/esm/icons/server'
 
 const DEFAULT_TIME = 5000
 const DEFAULT_PERSISTENT = 15000
@@ -63,7 +62,7 @@ export default function Solutions() {
             icon: Puzzle,
             description: 'Conectamos seus sistemas e automatizamos processos, integrando CRMs, ERPs, APIs e plataformas de ecommerce para facilitar sua operação.',
             benefits: [
-                'APIs RESTful e Webhooks em tempo real',
+                'APIs RESTFull e Webhooks em tempo real',
                 'Sincronização automática de dados',
                 'Integração com CRM (como Brevo)',
                 'Automação de workflows e processos',

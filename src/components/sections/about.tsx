@@ -2,7 +2,8 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { CheckIcon } from 'lucide-react';
+
+import CheckIcon from 'lucide-react/dist/esm/icons/check-check'
 
 const About = () => {
     const differentials = [

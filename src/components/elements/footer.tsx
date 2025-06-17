@@ -1,8 +1,16 @@
 'use client'
 
 import Link from "next/link"
-import {Facebook, Instagram, Linkedin, Mail, Phone, Twitter, Github} from "lucide-react"
-import siteconfig from '@/siteconfig'
+
+import Facebook from 'lucide-react/dist/esm/icons/facebook'
+import Instagram from 'lucide-react/dist/esm/icons/instagram'
+import Linkedin from 'lucide-react/dist/esm/icons/linkedin'
+import Mail from 'lucide-react/dist/esm/icons/mail'
+import Phone from 'lucide-react/dist/esm/icons/phone'
+import Twitter from 'lucide-react/dist/esm/icons/twitter'
+import Github from 'lucide-react/dist/esm/icons/github'
+
+import siteConfig from '@/siteconfig'
 
 export default function Footer() {
     const currentYear = new Date().getFullYear()
@@ -13,6 +21,7 @@ export default function Footer() {
         if (element) element.scrollIntoView({ behavior: 'smooth' })
     }
 
+    // noinspection HtmlUnknownAnchorTarget
     return (
         <footer className="bg-gray-900 text-gray-300 py-8 md:py-12">
             <div className="container mx-auto px-4">
@@ -24,19 +33,19 @@ export default function Footer() {
                             Soluções tecnológicas inovadoras para impulsionar o crescimento do seu negócio.
                         </p>
                         <div className="flex space-x-4">
-                            <Link href={siteconfig.social.facebook} aria-label="Facebook" className="hover:text-cls-gradient-via transition-colors" target="_blank" rel="noopener noreferrer">
+                            <Link href={siteConfig.social.facebook} aria-label="Facebook" className="hover:text-cls-gradient-via transition-colors" target="_blank" rel="noopener noreferrer">
                                 <Facebook size={18} />
                             </Link>
-                            <Link href={siteconfig.social.instagram} aria-label="Instagram" className="hover:text-cls-gradient-via transition-colors" target="_blank" rel="noopener noreferrer">
+                            <Link href={siteConfig.social.instagram} aria-label="Instagram" className="hover:text-cls-gradient-via transition-colors" target="_blank" rel="noopener noreferrer">
                                 <Instagram size={18} />
                             </Link>
-                            <Link href={siteconfig.social.twitter} aria-label="Twitter" className="hover:text-cls-gradient-via transition-colors" target="_blank" rel="noopener noreferrer">
+                            <Link href={siteConfig.social.twitter} aria-label="Twitter" className="hover:text-cls-gradient-via transition-colors" target="_blank" rel="noopener noreferrer">
                                 <Twitter size={18} />
                             </Link>
-                            <Link href={siteconfig.social.linkedin} aria-label="LinkedIn" className="hover:text-cls-gradient-via transition-colors" target="_blank" rel="noopener noreferrer">
+                            <Link href={siteConfig.social.linkedin} aria-label="LinkedIn" className="hover:text-cls-gradient-via transition-colors" target="_blank" rel="noopener noreferrer">
                                 <Linkedin size={18} />
                             </Link>
-                            <Link href={siteconfig.social.github} aria-label="LinkedIn" className="hover:text-cls-gradient-via transition-colors" target="_blank" rel="noopener noreferrer">
+                            <Link href={siteConfig.social.github} aria-label="LinkedIn" className="hover:text-cls-gradient-via transition-colors" target="_blank" rel="noopener noreferrer">
                                 <Github size={18} />
                             </Link>
                         </div>
@@ -65,32 +74,32 @@ export default function Footer() {
                         <h3 className="text-md md:text-lg font-semibold text-white mb-3 md:mb-4">Serviços</h3>
                         <ul className="grid grid-cols-2 sm:grid-cols-1 gap-1 text-sm md:text-base">
                             <li>
-                                <Link href="#solutions" className="hover:text-cls-gradient-via transition-colors">
+                                <Link href="#soluções" className="hover:text-cls-gradient-via transition-colors">
                                     Sistemas Web
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#solutions" className="hover:text-cls-gradient-via transition-colors">
+                                <Link href="#soluções" className="hover:text-cls-gradient-via transition-colors">
                                     Bots e Automação
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#solutions" className="hover:text-cls-gradient-via transition-colors">
+                                <Link href="#soluções" className="hover:text-cls-gradient-via transition-colors">
                                     Aplicativos Mobile
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#solutions" className="hover:text-cls-gradient-via transition-colors">
+                                <Link href="#soluções" className="hover:text-cls-gradient-via transition-colors">
                                     Integrações
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#solutions" className="hover:text-cls-gradient-via transition-colors">
+                                <Link href="#soluções" className="hover:text-cls-gradient-via transition-colors">
                                     SEO e Marketing
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#solutions" className="hover:text-cls-gradient-via transition-colors">
+                                <Link href="#soluções" className="hover:text-cls-gradient-via transition-colors">
                                     Infraestrutura
                                 </Link>
                             </li>
@@ -107,11 +116,11 @@ export default function Footer() {
                             {/*</li>*/}
                             <li className="flex items-center">
                                 <Phone size={16} className="mr-2 flex-shrink-0" />
-                                <span>{siteconfig.contact.phoneFormated}</span>
+                                <span>{siteConfig.contact.phoneFormated}</span>
                             </li>
                             <li className="flex items-center">
                                 <Mail size={16} className="mr-2 flex-shrink-0" />
-                                <span>{siteconfig.contact.email}</span>
+                                <span>{siteConfig.contact.email}</span>
                             </li>
                         </ul>
                     </div>

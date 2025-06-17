@@ -1,8 +1,7 @@
 'use client'
 
-import React from 'react'
-import { useIntersectionObserver } from '@/hooks/useIntersectionObserver'
-import siteconfig from '@/siteconfig'
+import {useIntersectionObserver} from '@/hooks/useIntersectionObserver'
+import siteConfig from '@/siteconfig'
 
 
 interface Model {
@@ -22,7 +21,7 @@ interface ContractingCardProps {
 }
 
 function ContractingCard({ model, index, onButtonClick }: ContractingCardProps) {
-    const { elementRef, isVisible } = useIntersectionObserver({
+    const {elementRef, isVisible} = useIntersectionObserver({
         threshold: 0.2,
         triggerOnce: true,
     });
@@ -35,7 +34,6 @@ function ContractingCard({ model, index, onButtonClick }: ContractingCardProps) 
             } ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
             style={{ transitionDelay: `${index * 200}ms` }}
         >
-            {/* Destaque superior */}
             {model.recommended ? (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
           <span className="bg-yellow-400 text-gray-900 px-4 py-2 rounded-full text-sm font-bold">
@@ -145,7 +143,7 @@ export default function Contracting() {
 
     const openWhatsApp = (modelTitle: string) => {
         const message = `Olá! Gostaria de saber mais sobre o modelo de contratação: ${modelTitle}`;
-        window.open(`https://wa.me/${siteconfig.contact.phone}?text=${encodeURIComponent(message)}`, '_blank');
+        window.open(`https://wa.me/${siteConfig.contact.phone}?text=${encodeURIComponent(message)}`, '_blank');
     };
 
     const { elementRef: headerRef, isVisible: headerVisible } = useIntersectionObserver({
@@ -157,9 +155,9 @@ export default function Contracting() {
     // const cardsObservers = contractingModels.map(() => ...); // <- LINHA REMOVIDA
 
     return (
-        <section id="contratação" className="py-20 section-dark-aggressive">
+        <section id="contratação" className="py-20 bg-gray-900">
             <div className="container mx-auto px-4">
-                <div className="max-w-6xl mx-auto">
+                <div className="max-w-6xl mx-auto text-center">
                     <div
                         ref={headerRef}
                         className={`text-center mb-16 transition-all duration-700 ${
@@ -173,7 +171,7 @@ export default function Contracting() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 text-center">
                         {/* Mapeie os modelos para o novo componente ContractingCard */}
                         {contractingModels.map((model, index) => (
                             <ContractingCard

@@ -1,8 +1,11 @@
 'use client'
 
 import {useState, useEffect} from 'react'
+
 import Image from '@/components/ui/image'
-import {X, AlignJustify} from 'lucide-react'
+
+import X from 'lucide-react/dist/esm/icons/x'
+import AlignJustify from 'lucide-react/dist/esm/icons/align-justify'
 
 
 export default function Header() {
