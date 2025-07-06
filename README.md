@@ -1,10 +1,11 @@
-# Jeffers Tech
+# JeffersTech
 
 [jefferstech.com.br](https://jefferstech.com.br)
 
-Jeffers Tech é um portfólio profissional moderno e responsivo, desenvolvido com as tecnologias mais atuais para apresentar projetos, habilidades e experiências de **Jefferson Lima**, Full Stack Developer com foco em soluções criativas e eficientes para web e mobile.
+**JeffersTech** é a landing page oficial da empresa JeffersTech, desenvolvida com foco em performance, responsividade e design moderno. A página apresenta os serviços, valores, projetos e formas de contato com a empresa liderada por **Jefferson Lima**, Full Stack Developer especializado em soluções criativas para web e mobile.
 
-Este projeto é uma extensão do meu portfólio pessoal: [jefferson-lima.dev.br](https://www.jefferson-lima.dev.br)
+Este projeto também complementa meu portfólio pessoal, disponível em:  
+🌐 [jefferson-lima.dev.br](https://www.jefferson-lima.dev.br)
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -17,21 +18,21 @@ Este projeto é uma extensão do meu portfólio pessoal: [jefferson-lima.dev.br]
 
 ## 📸 Visão Geral
 
-O site apresenta:
+A landing page apresenta:
 
-- Seção de introdução com animações modernas
-- Apresentação de projetos com miniaturas
-- Informações de contato
-- Design responsivo e acessível
-- Assets otimizados para performance
+- Hero section com identidade visual marcante
+- Apresentação institucional da JeffersTech
+- Projetos e serviços oferecidos
+- Design 100% responsivo e otimizado
+- Contato direto com a empresa
 
 ## 🛠️ Como rodar localmente
 
 Clone o projeto e instale as dependências:
 
 ```bash
-git clone https://github.com/seu-usuario/jeffers-tech.git
-cd jeffers-tech
+git clone https://github.com/seu-usuario/jefferstech.git
+cd jefferstech
 npm install
 ```
 
@@ -59,7 +60,7 @@ Abra [http://localhost:3000](http://localhost:3000) no seu navegador para visual
 
 ## 🧠 Sobre o Criador
 
-Desenvolvido por **Jefferson Lima**, engenheiro de software full stack apaixonado por tecnologia, código limpo e soluções escaláveis. Além deste projeto, mantenho um portfólio pessoal com artigos, projetos e informações profissionais em:  
+Desenvolvido por **Jefferson Lima**, engenheiro de software full stack e fundador da **JeffersTech**. Além deste projeto, mantenho um portfólio pessoal com artigos, projetos e informações profissionais em:  
 🌐 [jefferson-lima.dev.br](https://www.jefferson-lima.dev.br)
 
 ## 📄 Licença
