@@ -57,7 +57,7 @@ Abra [http://localhost:3000](http://localhost:3000) no seu navegador para visual
 
 ## 🧠 Sobre o Criador
 
-Jefferson Lima é desenvolvedor Full Stack especializado em Python, React, FastAPI e tecnologias modernas do ecossistema web. Saiba mais em [jefferstech.com.br](https://jefferstech.com.br)
+Jefferson Lima é desenvolvedor Full Stack especializado em Python, React, FastAPI e tecnologias modernas do ecossistema web. Saiba mais em [jefferson-lima.dev.br](https://jefferson-lima.dev.br)
 
 ## 📄 Licença
 
