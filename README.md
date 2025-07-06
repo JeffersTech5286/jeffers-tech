@@ -2,7 +2,9 @@
 
 [jefferstech.com.br](https://jefferstech.com.br)
 
-Jeffers Tech é um portfólio profissional moderno e responsivo, desenvolvido com as tecnologias mais atuais para apresentar projetos, habilidades e experiências de Jefferson Lima, Full Stack Developer com foco em soluções criativas e eficientes.
+Jeffers Tech é um portfólio profissional moderno e responsivo, desenvolvido com as tecnologias mais atuais para apresentar projetos, habilidades e experiências de **Jefferson Lima**, Full Stack Developer com foco em soluções criativas e eficientes para web e mobile.
+
+Este projeto é uma extensão do meu portfólio pessoal: [jefferson-lima.dev.br](https://www.jefferson-lima.dev.br)
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -57,7 +59,8 @@ Abra [http://localhost:3000](http://localhost:3000) no seu navegador para visual
 
 ## 🧠 Sobre o Criador
 
-Jefferson Lima é desenvolvedor Full Stack especializado em Python, React, FastAPI e tecnologias modernas do ecossistema web. Saiba mais em [jefferson-lima.dev.br](https://jefferson-lima.dev.br)
+Desenvolvido por **Jefferson Lima**, engenheiro de software full stack apaixonado por tecnologia, código limpo e soluções escaláveis. Além deste projeto, mantenho um portfólio pessoal com artigos, projetos e informações profissionais em:  
+🌐 [jefferson-lima.dev.br](https://www.jefferson-lima.dev.br)
 
 ## 📄 Licença
 
